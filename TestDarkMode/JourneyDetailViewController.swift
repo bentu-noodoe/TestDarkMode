@@ -162,7 +162,7 @@ final class JourneyDetailViewController: UIViewController {
                              lat: 80.0,
                              lon: 80.0)
         ],
-                    isPublic: true,
+                    isPublic: false,
                     reportState: nil,
                     createdAt: Date(),
                     updatedAt: Date(),

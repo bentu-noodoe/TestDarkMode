@@ -50,6 +50,7 @@ final class JourneyDetailHeaderView: UIView, NibOwnerLoadable {
     @IBOutlet private var sliderBarLeadingCons: NSLayoutConstraint!
     @IBOutlet private var sliderBarTrailingCons: NSLayoutConstraint!
     @IBOutlet private var indicatorBarLeadingCons: NSLayoutConstraint!
+    @IBOutlet var imageView: UIImageView!
     
     var selectedIndex: Int {
         set {

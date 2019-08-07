@@ -22,6 +22,7 @@
                 <outlet property="actionView" destination="Nne-SQ-ymQ" id="AFv-pu-Ri6"/>
                 <outlet property="collectButton" destination="zVw-0v-8iK" id="Jvt-36-khK"/>
                 <outlet property="editButton" destination="Wtr-h4-H1q" id="kFE-jk-fVe"/>
+                <outlet property="imageView" destination="P51-Yl-rCZ" id="NfJ-LB-VnN"/>
                 <outlet property="indicatorBarLeadingCons" destination="12p-LC-uwY" id="hxp-Ss-MXd"/>
                 <outlet property="indicatorBarWidthCons" destination="3Vf-Ce-VfL" id="k1R-ud-DWa"/>
                 <outlet property="lccaActionButton" destination="Ueu-6F-sXS" id="nrb-B0-Uks"/>
@@ -48,9 +49,18 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fov-2X-BOn">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="398"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P51-Yl-rCZ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="398"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="P51-Yl-rCZ" secondAttribute="bottom" id="Bvq-Kv-DlE"/>
                         <constraint firstAttribute="width" secondItem="fov-2X-BOn" secondAttribute="height" multiplier="375:398" id="O8V-bP-HlC"/>
+                        <constraint firstItem="P51-Yl-rCZ" firstAttribute="leading" secondItem="fov-2X-BOn" secondAttribute="leading" id="jPr-kC-s0L"/>
+                        <constraint firstAttribute="trailing" secondItem="P51-Yl-rCZ" secondAttribute="trailing" id="lm2-37-2GD"/>
+                        <constraint firstItem="P51-Yl-rCZ" firstAttribute="top" secondItem="fov-2X-BOn" secondAttribute="top" id="ouU-wh-UmB"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xps-RM-Tix">
