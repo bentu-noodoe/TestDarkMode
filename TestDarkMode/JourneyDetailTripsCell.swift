@@ -54,7 +54,7 @@ final class JourneyDetailTripsCell: UITableViewCell {
     }
     
     func configure(_ previewImageUrl: String?, placeholderImage: UIImage?, distance: String?, duration: String?, displacement: String?, startDate: String?, endDate: String?, shouldDisplayTextInfo: Bool, scrollToTopClosure: (() -> Void)?) {
-        previewImageView.setImageUrl(previewImageUrl, placeholder: placeholderImage)
+//        previewImageView.setImageUrl(previewImageUrl, placeholder: placeholderImage)
         textInfoStackView.isHidden = !shouldDisplayTextInfo
         distanceLabel.text = distance ?? ""
         durationLabel.attributedText = formatedDurationString(of: duration ?? "")
