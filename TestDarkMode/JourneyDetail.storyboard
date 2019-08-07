@@ -130,7 +130,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fus-xo-MdI" customClass="CacheImageView" customModule="TestDarkMode" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DynamicScene" translatesAutoresizingMaskIntoConstraints="NO" id="fus-xo-MdI" customClass="CacheImageView" customModule="TestDarkMode" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="fus-xo-MdI" secondAttribute="height" multiplier="1:1" id="2gb-i6-FWk"/>
@@ -542,6 +542,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DynamicScene" width="4032" height="3024"/>
         <image name="icCc" width="24" height="24"/>
         <image name="icDatetime" width="24" height="24"/>
         <image name="icDuration" width="24" height="24"/>

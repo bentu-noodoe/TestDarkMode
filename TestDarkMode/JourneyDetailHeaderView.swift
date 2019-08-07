@@ -88,6 +88,7 @@ final class JourneyDetailHeaderView: UIView, NibOwnerLoadable {
             .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: selectedSegmentedControlTextColor,
                                      NSAttributedString.Key.font : UIFont(name: "Lato-Regular", size: 12.0) ?? UIFont.systemFont(ofSize: 12, weight: .regular)], for: .selected)
         giveNavigationButtonABorder()
+        giveImageViewAImage()
         navigationButton.setTitle(String.localizedString("Navigation"), for: .normal)
         editButton.setTitle(String.localizedString("Edit"), for: .normal)
         publishButton.setTitle(String.localizedString("Publish"), for: .normal)
@@ -116,10 +117,19 @@ final class JourneyDetailHeaderView: UIView, NibOwnerLoadable {
         UITraitCollection.current = savedTc
     }
 
+    func giveImageViewAImage() {
+        let tc = self.traitCollection
+        let image = UIImage(named: "DynamicScene")!
+        let asset = image.imageAsset!
+        let resolvedImage = asset.image(with: tc)
+        imageView.image = resolvedImage
+    }
+
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
             giveNavigationButtonABorder()
+            giveImageViewAImage()
         }
     }
     
