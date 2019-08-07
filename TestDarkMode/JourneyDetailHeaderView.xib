@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,12 +72,13 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-Se-0qH" userLabel="Like Button">
                                     <rect key="frame" x="0.0" y="0.0" width="54" height="27"/>
+                                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                     <inset key="contentEdgeInsets" minX="13" minY="7" maxX="6" maxY="7"/>
                                     <inset key="titleEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="1" maxY="0.0"/>
                                     <state key="normal" image="likes_normal">
-                                        <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <state key="selected" image="likes_active"/>
                                     <userDefinedRuntimeAttributes>
@@ -90,12 +92,13 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd9-bT-Svv" userLabel="Comment Button">
                                     <rect key="frame" x="59" y="0.0" width="47" height="27"/>
+                                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                     <inset key="contentEdgeInsets" minX="13" minY="7" maxX="6" maxY="7"/>
                                     <inset key="titleEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="1" maxY="0.0"/>
                                     <state key="normal" image="comments_normal">
-                                        <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <state key="selected" image="comments_active"/>
                                     <userDefinedRuntimeAttributes>
@@ -109,12 +112,13 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWu-tz-qpP" userLabel="Collect Button">
                                     <rect key="frame" x="111" y="0.0" width="47" height="27"/>
+                                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
                                     <inset key="contentEdgeInsets" minX="13" minY="7" maxX="6" maxY="7"/>
                                     <inset key="titleEdgeInsets" minX="-4" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="-8" minY="0.0" maxX="1" maxY="0.0"/>
                                     <state key="normal" image="download_normal">
-                                        <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <state key="selected" image="download_active"/>
                                     <userDefinedRuntimeAttributes>
@@ -133,6 +137,7 @@
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueu-6F-sXS" userLabel="More Action Button">
                             <rect key="frame" x="330" y="15" width="35" height="27"/>
+                            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="agk-8J-9bv"/>
                                 <constraint firstAttribute="height" constant="27" id="t6M-Pw-dov"/>
@@ -150,7 +155,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="lhh-Fg-w11" firstAttribute="top" secondItem="xps-RM-Tix" secondAttribute="top" constant="15" id="3B0-1S-Rjr"/>
                         <constraint firstItem="lhh-Fg-w11" firstAttribute="leading" secondItem="xps-RM-Tix" secondAttribute="leading" constant="10" id="6uB-Rt-6Mj"/>
@@ -210,7 +215,7 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-h4-H1q">
                                             <rect key="frame" x="0.0" y="0.0" width="166.5" height="67.5"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" name="OppositeBackgroundColor"/>
                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                                             <state key="normal" title="Edit">
                                                 <color key="titleColor" red="0.73725490196078436" green="0.027450980392156862" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
@@ -232,7 +237,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJU-i7-Ab9">
                                             <rect key="frame" x="172.5" y="0.0" width="166.5" height="67.5"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" name="OppositeBackgroundColor"/>
                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                                             <state key="normal" title="Publish">
                                                 <color key="titleColor" red="0.73725490199999999" green="0.027450980390000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,7 +265,7 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="wNL-qe-gXE" secondAttribute="bottom" constant="16" id="YFX-R8-Fmo"/>
                         <constraint firstAttribute="trailing" secondItem="wNL-qe-gXE" secondAttribute="trailing" constant="18" id="oBm-aR-ay7"/>
@@ -276,7 +281,7 @@
                             <subviews>
                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-Xy-iuA">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="cAK-0g-E5e"/>
                                     </constraints>
@@ -285,7 +290,7 @@
                                         <segment title="TRIPS"/>
                                         <segment title="SPOTS"/>
                                     </segments>
-                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <connections>
                                         <action selector="segmentedControlValueChanged:" destination="-1" eventType="valueChanged" id="qqV-Pc-Qed"/>
                                     </connections>
@@ -306,7 +311,7 @@
                                     </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="cwX-yE-zKp" firstAttribute="leading" secondItem="aiJ-6t-baH" secondAttribute="leading" id="12p-LC-uwY"/>
                                 <constraint firstItem="cwX-yE-zKp" firstAttribute="bottom" secondItem="pRn-Xy-iuA" secondAttribute="bottom" id="7w5-sR-XkD"/>
@@ -329,7 +334,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="fov-2X-BOn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2FD-Lw-3iL"/>
                 <constraint firstItem="Nne-SQ-ymQ" firstAttribute="top" secondItem="xps-RM-Tix" secondAttribute="bottom" id="3eG-hK-cTU"/>
@@ -357,5 +362,8 @@
         <image name="likes_active" width="17.5" height="15.5"/>
         <image name="likes_normal" width="17.5" height="15.5"/>
         <image name="more_normal" width="14" height="4.5"/>
+        <namedColor name="OppositeBackgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

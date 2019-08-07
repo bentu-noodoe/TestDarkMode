@@ -564,7 +564,7 @@ extension JourneyDetailViewController: UITableViewDelegate {
             return header
         case spots.count + 3:
             let header = UIView()
-            header.backgroundColor = .white
+            header.backgroundColor = .systemBackground
             return header
         default:
             return nil
