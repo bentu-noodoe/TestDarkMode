@@ -87,12 +87,40 @@ final class JourneyDetailHeaderView: UIView, NibOwnerLoadable {
         UISegmentedControl.appearance(whenContainedInInstancesOf: [JourneyDetailHeaderView.self])
             .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: selectedSegmentedControlTextColor,
                                      NSAttributedString.Key.font : UIFont(name: "Lato-Regular", size: 12.0) ?? UIFont.systemFont(ofSize: 12, weight: .regular)], for: .selected)
+        giveNavigationButtonABorder()
         navigationButton.setTitle(String.localizedString("Navigation"), for: .normal)
         editButton.setTitle(String.localizedString("Edit"), for: .normal)
         publishButton.setTitle(String.localizedString("Publish"), for: .normal)
         segmentedControl.setTitle(String.localizedString("Story"), forSegmentAt: 0)
         segmentedControl.setTitle(String.localizedString("Trips"), forSegmentAt: 1)
         segmentedControl.setTitle(String.localizedString("Spots"), forSegmentAt: 2)
+    }
+
+    func giveNavigationButtonABorder() {
+        navigationButton.layer.borderWidth = 4.0
+
+        let tc = self.traitCollection
+
+        //1.
+        tc.performAsCurrent {
+            navigationButton.layer.borderColor = UIColor(named: "SomeKindOfBorderColor")!.cgColor
+        }
+
+        //2.
+        navigationButton.layer.borderColor = UIColor(named: "SomeKindOfBorderColor")!.resolvedColor(with: tc).cgColor
+
+        //3.
+        let savedTc = UITraitCollection.current
+        UITraitCollection.current = tc
+        navigationButton.layer.borderColor = UIColor(named: "SomeKindOfBorderColor")!.cgColor
+        UITraitCollection.current = savedTc
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            giveNavigationButtonABorder()
+        }
     }
     
     override func layoutSubviews() {
