@@ -78,11 +78,14 @@ final class JourneyDetailHeaderView: UIView, NibOwnerLoadable {
     }
     
     private func commonInit() {
+        let normalSegmentedControlTextColor = UIColor(named: "NormalSegmentedControlTextColor")!
+        let selectedSegmentedControlTextColor = UIColor(named: "SelectedSegmentedControlTextColor")!
+
         UISegmentedControl.appearance(whenContainedInInstancesOf: [JourneyDetailHeaderView.self])
-            .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor(red: 134, green: 134, blue: 134),
+            .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: normalSegmentedControlTextColor,
                                      NSAttributedString.Key.font : UIFont(name: "Lato-Regular", size: 12.0) ?? UIFont.systemFont(ofSize: 12, weight: .regular)], for: .normal)
         UISegmentedControl.appearance(whenContainedInInstancesOf: [JourneyDetailHeaderView.self])
-            .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor(red: 188, green: 7, blue: 17),
+            .setTitleTextAttributes([NSAttributedString.Key.foregroundColor: selectedSegmentedControlTextColor,
                                      NSAttributedString.Key.font : UIFont(name: "Lato-Regular", size: 12.0) ?? UIFont.systemFont(ofSize: 12, weight: .regular)], for: .selected)
         navigationButton.setTitle(String.localizedString("Navigation"), for: .normal)
         editButton.setTitle(String.localizedString("Edit"), for: .normal)
